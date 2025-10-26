@@ -43,7 +43,7 @@ const packageSchema = new Schema<PackageDocument>({
   },
   type: {
     type: String,
-    enum: ['platinum-comprehensive', 'standard-plus-medical', 'essential-accommodation'],
+    enum: ['essential-stay', 'platinum-care', 'standard-plus-care'],
     required: true
   }
 }, {
