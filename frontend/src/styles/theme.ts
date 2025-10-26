@@ -68,6 +68,31 @@ export const theme = {
     heading: "'Plus Jakarta Sans', 'Red Hat Display', 'DM Sans', sans-serif",
     mono: "'JetBrains Mono', 'Fira Code', monospace",
   },
+  // Updated font sizes for professional appearance
+  fontSizes: {
+    xs: '0.75rem',    // 12px
+    sm: '0.875rem',   // 14px
+    base: '1rem',     // 16px
+    lg: '1.125rem',   // 18px
+    xl: '1.25rem',    // 20px
+    '2xl': '1.5rem',  // 24px
+    '3xl': '1.875rem', // 30px
+    '4xl': '2.25rem',  // 36px
+  },
+  // Updated spacing for more compact design
+  spacing: {
+    xs: '0.25rem',    // 4px
+    sm: '0.5rem',     // 8px
+    md: '0.75rem',    // 12px
+    base: '1rem',     // 16px
+    lg: '1.5rem',     // 24px
+    xl: '2rem',       // 32px
+    '2xl': '3rem',    // 48px
+    container: {
+      padding: '1rem',
+      maxWidth: '1200px',
+    }
+  },
   breakpoints: {
     sm: '640px',
     md: '768px',
@@ -75,32 +100,96 @@ export const theme = {
     xl: '1280px',
     '2xl': '1536px',
   },
-  spacing: {
-    container: {
-      padding: '1rem',
-      maxWidth: '1200px',
-    }
-  },
+  // Updated shadows for more subtle, professional appearance
   shadows: {
-    sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
-    base: '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
-    md: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-    lg: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
-    xl: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-    '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
+    xs: '0 1px 1px 0 rgb(0 0 0 / 0.02)',
+    sm: '0 1px 2px 0 rgb(0 0 0 / 0.03)',
+    base: '0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 1px -1px rgb(0 0 0 / 0.03)',
+    md: '0 3px 5px -1px rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.03)',
+    lg: '0 8px 12px -3px rgb(0 0 0 / 0.05), 0 3px 5px -2px rgb(0 0 0 / 0.03)',
+    xl: '0 12px 18px -5px rgb(0 0 0 / 0.06), 0 5px 8px -3px rgb(0 0 0 / 0.04)',
+    '2xl': '0 20px 25px -8px rgb(0 0 0 / 0.08), 0 8px 10px -4px rgb(0 0 0 / 0.05)',
   },
+  // Updated border radius for consistency
   borderRadius: {
-    sm: '0.375rem',
-    base: '0.5rem',
-    md: '0.75rem',
-    lg: '1rem',
-    xl: '1.5rem',
-    '2xl': '2rem',
+    xs: '0.25rem',   // 4px
+    sm: '0.375rem',  // 6px
+    base: '0.5rem',  // 8px
+    md: '0.75rem',   // 12px
+    lg: '1rem',      // 16px
+    xl: '1.5rem',    // 24px
+    '2xl': '2rem',   // 32px
+    full: '9999px',
   },
+  // Updated animation for smoother interactions
   animation: {
-    'fade-in': 'fadeIn 0.5s ease-in-out',
-    'slide-up': 'slideUp 0.3s ease-out',
+    'fade-in': 'fadeIn 0.3s ease-out',
+    'slide-up': 'slideUp 0.2s ease-out',
     'bounce-subtle': 'bounceSubtle 2s infinite',
+    'scale-in': 'scaleIn 0.15s ease-out',
+  },
+  // New: Typography scale for consistent text hierarchy
+  typography: {
+    h1: {
+      fontSize: '1.875rem', // 30px
+      fontWeight: '700',
+      lineHeight: '1.2',
+    },
+    h2: {
+      fontSize: '1.5rem',   // 24px
+      fontWeight: '600',
+      lineHeight: '1.3',
+    },
+    h3: {
+      fontSize: '1.25rem',  // 20px
+      fontWeight: '600',
+      lineHeight: '1.4',
+    },
+    body: {
+      fontSize: '0.875rem', // 14px
+      fontWeight: '400',
+      lineHeight: '1.5',
+    },
+    small: {
+      fontSize: '0.75rem',  // 12px
+      fontWeight: '400',
+      lineHeight: '1.4',
+    },
+  },
+  // New: Component-specific styles
+  components: {
+    button: {
+      sm: {
+        padding: '0.5rem 1rem',
+        fontSize: '0.75rem',
+      },
+      md: {
+        padding: '0.625rem 1.25rem',
+        fontSize: '0.875rem',
+      },
+      lg: {
+        padding: '0.75rem 1.5rem',
+        fontSize: '1rem',
+      },
+    },
+    input: {
+      sm: {
+        padding: '0.375rem 0.75rem',
+        fontSize: '0.75rem',
+      },
+      md: {
+        padding: '0.5rem 1rem',
+        fontSize: '0.875rem',
+      },
+      lg: {
+        padding: '0.625rem 1.25rem',
+        fontSize: '1rem',
+      },
+    },
+    card: {
+      padding: '1.25rem',
+      borderRadius: '0.75rem',
+    },
   }
 } as const;
 
