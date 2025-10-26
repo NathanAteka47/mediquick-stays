@@ -231,7 +231,8 @@ const Home: React.FC = () => {
                 </select>
               </div>
               <div className="flex items-end">
-                <Button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700">
+                <Button as={Link}
+              to="/packages" type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700">
                   Find Care Options
                 </Button>
               </div>
