@@ -85,61 +85,61 @@ const EssentialAccommodation: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <section className="bg-gradient-to-r from-gray-500 to-gray-600 text-white py-16">
+      <section className="bg-gradient-to-r from-gray-500 to-gray-600 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gray-400 inline-block px-4 py-1 rounded-full text-sm font-semibold mb-4">
+            <div className="bg-gray-400 inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3">
               Budget Friendly
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Essential Accommodation</h1>
-            <p className="text-xl mb-8">Comfortable & Affordable Stay Near Medical Facilities</p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 inline-block">
-              <div className="flex items-center justify-center space-x-4">
-                <div className="text-3xl font-bold">Ksh500</div>
-                <div className="text-lg opacity-90">/ day</div>
+            <h1 className="text-2xl md:text-3xl font-bold mb-3">Essential Accommodation</h1>
+            <p className="text-sm mb-6">Comfortable & Affordable Stay Near Medical Facilities</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 inline-block">
+              <div className="flex items-center justify-center space-x-2">
+                <div className="text-xl font-bold">Ksh500</div>
+                <div className="text-sm opacity-90">/ day</div>
               </div>
-              <p className="text-sm mt-2">Flexible stay duration • Up to 2 Adults</p>
+              <p className="text-xs mt-1">Flexible stay duration • Up to 2 Adults</p>
               <p className="text-xs opacity-80 mt-1">Weekly & monthly discounts available</p>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-6">
             {/* Quick Booking Widget */}
-            <div className="bg-white rounded-2xl shadow-xl p-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Book Your Stay</h2>
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="bg-white rounded-xl shadow-lg p-4">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Book Your Stay</h2>
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Check In</label>
+                  <label className="block text-xs font-medium text-gray-700 mb-1">Check In</label>
                   <Input
                     type="date"
                     name="checkIn"
                     value={bookingDates.checkIn}
                     onChange={handleDateChange}
-                    className="text-gray-900"
+                    className="text-gray-900 text-sm"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Check Out</label>
+                  <label className="block text-xs font-medium text-gray-700 mb-1">Check Out</label>
                   <Input
                     type="date"
                     name="checkOut"
                     value={bookingDates.checkOut}
                     onChange={handleDateChange}
-                    className="text-gray-900"
+                    className="text-gray-900 text-sm"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Guests</label>
+                  <label className="block text-xs font-medium text-gray-700 mb-1">Guests</label>
                   <select
                     name="guests"
                     value={bookingDates.guests}
                     onChange={handleDateChange}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
+                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900 text-sm"
                   >
                     <option value="1">1 Guest</option>
                     <option value="2">2 Guests</option>
@@ -147,7 +147,7 @@ const EssentialAccommodation: React.FC = () => {
                   </select>
                 </div>
                 <div className="flex items-end">
-                  <Button onClick={handleBookNow} className="w-full">
+                  <Button onClick={handleBookNow} className="w-full text-sm">
                     Book Now
                   </Button>
                 </div>
@@ -155,10 +155,10 @@ const EssentialAccommodation: React.FC = () => {
             </div>
 
             {/* Package Description */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Affordable Comfort</h2>
-              <div className="prose prose-lg text-gray-600">
-                <p className="mb-4">
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Affordable Comfort</h2>
+              <div className="text-gray-600 text-sm">
+                <p className="mb-3">
                   Our Essential Accommodation package offers excellent value for budget-conscious medical travelers. 
                   Enjoy comfortable, clean accommodation with all the basic amenities you need, located conveniently 
                   near Nairobi's major medical facilities.
@@ -171,60 +171,60 @@ const EssentialAccommodation: React.FC = () => {
             </div>
 
             {/* Included Features */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Included Features</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Included Features</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {includedFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div key={index} className="flex items-start space-x-2">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-gray-700 text-sm">{feature}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Facility Access */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Shared Facility Access</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Shared Facility Access</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {facilityAccess.map((facility, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div key={index} className="flex items-start space-x-2">
+                    <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">{facility}</span>
+                    <span className="text-gray-700 text-sm">{facility}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Nearby Amenities */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Nearby Amenities</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Nearby Amenities</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {nearbyAmenities.map((amenity, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div key={index} className="flex items-start space-x-2">
+                    <div className="w-5 h-5 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">{amenity}</span>
+                    <span className="text-gray-700 text-sm">{amenity}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* FAQ Section */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
-              <div className="space-y-4">
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+              <div className="space-y-3">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg p-4">
-                    <h3 className="font-semibold text-gray-800 mb-2">{faq.question}</h3>
-                    <p className="text-gray-600">{faq.answer}</p>
+                  <div key={index} className="border border-gray-200 rounded p-3">
+                    <h3 className="font-semibold text-gray-800 mb-1 text-sm">{faq.question}</h3>
+                    <p className="text-gray-600 text-sm">{faq.answer}</p>
                   </div>
                 ))}
               </div>
@@ -232,42 +232,42 @@ const EssentialAccommodation: React.FC = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             {/* Package Specifications */}
-            <div className="bg-white rounded-2xl shadow-xl p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Package Specifications</h3>
-              <div className="space-y-3">
-                <div className="flex justify-between py-2 border-b border-gray-100">
-                  <span className="text-gray-600">Capacity:</span>
-                  <span className="font-semibold text-gray-800">Up to 2 Adults</span>
+            <div className="bg-white rounded-xl shadow-lg p-4">
+              <h3 className="text-base font-bold text-gray-800 mb-3">Package Specifications</h3>
+              <div className="space-y-2">
+                <div className="flex justify-between py-1 border-b border-gray-100">
+                  <span className="text-gray-600 text-sm">Capacity:</span>
+                  <span className="font-semibold text-gray-800 text-sm">Up to 2 Adults</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-gray-100">
-                  <span className="text-gray-600">Room Size:</span>
-                  <span className="font-semibold text-gray-800">35sqm Comfortable Room</span>
+                <div className="flex justify-between py-1 border-b border-gray-100">
+                  <span className="text-gray-600 text-sm">Room Size:</span>
+                  <span className="font-semibold text-gray-800 text-sm">35sqm Comfortable Room</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-gray-100">
-                  <span className="text-gray-600">Pricing:</span>
-                  <span className="font-semibold text-gray-800">Ksh500 / day</span>
+                <div className="flex justify-between py-1 border-b border-gray-100">
+                  <span className="text-gray-600 text-sm">Pricing:</span>
+                  <span className="font-semibold text-gray-800 text-sm">Ksh500 / day</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-gray-100">
-                  <span className="text-gray-600">Kitchen:</span>
-                  <span className="font-semibold text-gray-800">Shared Access</span>
+                <div className="flex justify-between py-1 border-b border-gray-100">
+                  <span className="text-gray-600 text-sm">Kitchen:</span>
+                  <span className="font-semibold text-gray-800 text-sm">Shared Access</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-gray-100">
-                  <span className="text-gray-600">Housekeeping:</span>
-                  <span className="font-semibold text-gray-800">Weekly Included</span>
+                <div className="flex justify-between py-1 border-b border-gray-100">
+                  <span className="text-gray-600 text-sm">Housekeeping:</span>
+                  <span className="font-semibold text-gray-800 text-sm">Weekly Included</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-gray-100">
-                  <span className="text-gray-600">Security:</span>
-                  <span className="font-semibold text-gray-800">24/7 & CCTV</span>
+                <div className="flex justify-between py-1 border-b border-gray-100">
+                  <span className="text-gray-600 text-sm">Security:</span>
+                  <span className="font-semibold text-gray-800 text-sm">24/7 & CCTV</span>
                 </div>
               </div>
             </div>
 
             {/* Discount Information */}
-            <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-green-800 mb-2">Extended Stay Discounts</h3>
-              <div className="space-y-2 text-sm">
+            <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+              <h3 className="text-base font-bold text-green-800 mb-1">Extended Stay Discounts</h3>
+              <div className="space-y-1 text-xs">
                 <div className="flex justify-between">
                   <span className="text-green-700">1 week+ stay:</span>
                   <span className="font-semibold text-green-800">10% discount</span>
@@ -281,56 +281,56 @@ const EssentialAccommodation: React.FC = () => {
                   <span className="font-semibold text-green-800">20% discount</span>
                 </div>
               </div>
-              <p className="text-green-600 text-xs mt-3">
+              <p className="text-green-600 text-xs mt-2">
                 *Discounts applied automatically at checkout
               </p>
             </div>
 
             {/* Proximity to Hospitals */}
-            <div className="bg-white rounded-2xl shadow-xl p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Nearby Hospitals</h3>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">Aga Khan Hospital</span>
-                  <span className="text-green-600 font-semibold">5 min walk</span>
+            <div className="bg-white rounded-xl shadow-lg p-4">
+              <h3 className="text-base font-bold text-gray-800 mb-3">Nearby Hospitals</h3>
+              <div className="space-y-2">
+                <div className="flex justify-between items-center py-1 border-b border-gray-100">
+                  <span className="text-gray-700 text-sm">Aga Khan Hospital</span>
+                  <span className="text-green-600 font-semibold text-xs">5 min walk</span>
                 </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">Nairobi Hospital</span>
-                  <span className="text-blue-600 font-semibold">10 min drive</span>
+                <div className="flex justify-between items-center py-1 border-b border-gray-100">
+                  <span className="text-gray-700 text-sm">Nairobi Hospital</span>
+                  <span className="text-blue-600 font-semibold text-xs">10 min drive</span>
                 </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">MP Shah Hospital</span>
-                  <span className="text-blue-600 font-semibold">8 min drive</span>
+                <div className="flex justify-between items-center py-1 border-b border-gray-100">
+                  <span className="text-gray-700 text-sm">MP Shah Hospital</span>
+                  <span className="text-blue-600 font-semibold text-xs">8 min drive</span>
                 </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-700">Kenyatta Hospital</span>
-                  <span className="text-blue-600 font-semibold">15 min drive</span>
+                <div className="flex justify-between items-center py-1 border-b border-gray-100">
+                  <span className="text-gray-700 text-sm">Kenyatta Hospital</span>
+                  <span className="text-blue-600 font-semibold text-xs">15 min drive</span>
                 </div>
               </div>
             </div>
 
             {/* Other Packages */}
-            <div className="bg-white rounded-2xl shadow-xl p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Other Packages</h3>
-              <div className="space-y-4">
-                <div className="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors">
-                  <h4 className="font-semibold text-gray-800 mb-2">Platinum Comprehensive Care</h4>
-                  <p className="text-gray-600 text-sm mb-2">From Ksh15,000 / week</p>
-                  <p className="text-gray-500 text-xs mb-2">Full medical support with luxury accommodation</p>
+            <div className="bg-white rounded-xl shadow-lg p-4">
+              <h3 className="text-base font-bold text-gray-800 mb-3">Other Packages</h3>
+              <div className="space-y-3">
+                <div className="border border-gray-200 rounded p-3 hover:border-blue-300 transition-colors">
+                  <h4 className="font-semibold text-gray-800 mb-1 text-sm">Platinum Comprehensive Care</h4>
+                  <p className="text-gray-600 text-xs mb-1">From Ksh15,000 / week</p>
+                  <p className="text-gray-500 text-xs mb-1">Full medical support with luxury accommodation</p>
                   <Link 
                     to="/packages/platinum-care" 
-                    className="text-blue-600 hover:text-blue-700 font-semibold text-sm"
+                    className="text-blue-600 hover:text-blue-700 font-semibold text-xs"
                   >
                     View Details →
                   </Link>
                 </div>
-                <div className="border border-gray-200 rounded-lg p-4 hover:border-green-300 transition-colors">
-                  <h4 className="font-semibold text-gray-800 mb-2">Standard Plus Medical Stay</h4>
-                  <p className="text-gray-600 text-sm mb-2">From Ksh8,000 / week</p>
-                  <p className="text-gray-500 text-xs mb-2">Enhanced accommodation with basic medical support</p>
+                <div className="border border-gray-200 rounded p-3 hover:border-green-300 transition-colors">
+                  <h4 className="font-semibold text-gray-800 mb-1 text-sm">Standard Plus Medical Stay</h4>
+                  <p className="text-gray-600 text-xs mb-1">From Ksh8,000 / week</p>
+                  <p className="text-gray-500 text-xs mb-1">Enhanced accommodation with basic medical support</p>
                   <Link 
                     to="/packages/standard-plus-care" 
-                    className="text-green-600 hover:text-green-700 font-semibold text-sm"
+                    className="text-green-600 hover:text-green-700 font-semibold text-xs"
                   >
                     View Details →
                   </Link>
@@ -339,18 +339,18 @@ const EssentialAccommodation: React.FC = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-blue-800 mb-2">Need Assistance?</h3>
-              <p className="text-blue-700 text-sm mb-4">
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+              <h3 className="text-base font-bold text-blue-800 mb-1">Need Assistance?</h3>
+              <p className="text-blue-700 text-xs mb-3">
                 Our team is here to help you choose the right accommodation for your needs.
               </p>
-              <div className="space-y-2 text-sm">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+              <div className="space-y-1 text-xs">
+                <div className="flex items-center space-x-1">
+                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
                   <span className="text-blue-700">Call: +25474 6273025</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <div className="flex items-center space-x-1">
+                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
                   <span className="text-blue-700">Email: info@medical-stays.com</span>
                 </div>
               </div>
