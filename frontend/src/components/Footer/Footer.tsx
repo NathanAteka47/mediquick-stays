@@ -28,10 +28,10 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { name: "Facebook", icon: "📘", url: "#" },
-    { name: "Twitter", icon: "🐦", url: "#" },
-    { name: "Instagram", icon: "📷", url: "#" },
-    { name: "LinkedIn", icon: "💼", url: "#" }
+    { name: "Facebook", icon: <img src="/facebook.jpg" alt="Facebook" />, url: "#" },
+    { name: "Twitter", icon: <img src="/twitter.jpg" alt="Twitter" />, url: "#" },
+    { name: "Instagram", icon: <img src="/instagram.jpg" alt="Instagram" />, url: "#" },
+    { name: "LinkedIn", icon: <img src="/linkedin.jpg" alt="LinkedIn" />, url: "#" }
   ];
 
   return (
@@ -43,7 +43,9 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                <span className="text-blue-600 font-bold text-sm">MS</span>
+                <span className="text-blue-600 font-bold text-sm">
+                  <img src="/mediquick-Web-Logo.png" alt="" />
+                </span>
               </div>
               <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">
                 Mediquick Stays
