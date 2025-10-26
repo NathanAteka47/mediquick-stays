@@ -174,7 +174,7 @@ const Home: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                <span>Comprehensive Care Packages</span>
+                <span>Comprehensive Packages</span>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ const Home: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Comprehensive Care Packages</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Packages</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Choose from our tiered packages designed to meet different medical and accommodation needs. 
               From basic stays to full medical support, we have options for every situation.
