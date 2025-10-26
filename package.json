@@ -1,0 +1,17 @@
+{
+  "name": "mediquick",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "npm --prefix client run dev",
+    "dev:backend": "npm --prefix server run dev",
+    "build": "npm --prefix client run build && npm --prefix server run build",
+    "start": "npm --prefix server run start",
+    "lint": "npm --prefix client run lint && npm --prefix server run lint",
+    "test": "npm --prefix client run test && npm --prefix server run test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
