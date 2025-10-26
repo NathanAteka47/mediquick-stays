@@ -159,7 +159,7 @@ const Home: React.FC = () => {
             <p className="text-base md:text-lg mb-6 max-w-3xl mx-auto">
               Comprehensive Medical Accommodation & Home-Based Care Services in Nairobi
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-5xl mx-auto text-left text-sm">
+            {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-5xl mx-auto text-left text-sm">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                 <span>24/7 Medical Support & Nursing Care</span>
@@ -176,7 +176,7 @@ const Home: React.FC = () => {
                 <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                 <span>Comprehensive Packages</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Enhanced Search Form */}
